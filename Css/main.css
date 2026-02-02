@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    background: #0a0f1c;
+    color: #e0eaff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #0f1528;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header a {
+    margin-left: 20px;
+    color: #7aa9ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header a:hover {
+    color: #4d7cff;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    color: #7aa9ff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glitch-text {
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    color: #7aa9ff;
+    text-shadow: 0 0 10px #477bff;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #a5b8ff;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #1a2d5c;
+    border: 1px solid #4d7cff;
+    color: #cfe0ff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2b3f70;
+}
+
+/* SECTIONS */
+.section {
+    padding: 120px 15% 80px;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #7aa9ff;
+    font-family: 'Orbitron';
+}
+
+.section-text {
+    color: #d2dbff;
+}
+
+/* CARDS */
+.card {
+    background: #11182c;
+    padding: 20px;
+    border-left: 3px solid #4d7cff;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-container span {
+    background: #162040;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #4d7cff;
+    color: #cfe0ff;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f1528;
+    color: #7aa9ff;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
