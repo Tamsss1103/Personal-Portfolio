@@ -1,4 +1,3 @@
-// Fade-in elements on scroll
 const sections = document.querySelectorAll(".section, .card, .skills-container span");
 
 const observer = new IntersectionObserver(entries => {
@@ -9,9 +8,7 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-sections.forEach(sec => observer.observe(sec));
-
-// Add animation class dynamically
-document.addEventListener("DOMContentLoaded", () => {
-    sections.forEach(el => el.classList.add("hidden"));
+sections.forEach(sec => {
+    sec.classList.add("hidden");
+    observer.observe(sec);
 });
